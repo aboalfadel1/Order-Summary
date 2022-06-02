@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 350px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+header img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+section {
+    padding: 20px 40px;
+    text-align: center;
+}
+.top p {
+    color:  hsl(224, 23%, 55%);
+    margin-top: 10px;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a{
+    flex: 2;
+    text-align: right;
+    margin-right: 10px;
+}
+.price p{
+    margin-left: 15px;
+    font-weight: 900;
+}
+span{
+    display: block;
+    color:  hsl(224, 23%, 55%);
+    font-weight: 300;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+footer button{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;font-weight: 700;
+    font-size: 0.9;
+
+}
+footer button:first-of-type{
+    background-color: #382AE1;
+    color: white;
+    
+}
+footer button:last-of-type{
+    background-color: white;
+    color: hsl(244,23%,55%);
+}
+@media (max-width:800px){
+    body{
+        background: url(images/pattern-background-mobile.svg);
+        background-size: cover;
+    background-repeat: no-repeat;
+    }
+}
